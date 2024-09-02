@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+#navbar {
+  height: 10vh;
+  margin: 30px 80px 20px 80px;
+  padding: 20px 15px 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid black;/ */
+  font-weight: bold;
+}
+.logo {
+  font-size: 25px;
+  color: rgb(80, 46, 204);
+}
+
+.logo:hover{
+    background-color: rgb(152, 67, 231);
+    border-radius: 45px;
+    padding: 15px;
+    color:  whitesmoke;
+    transform: scale(0.9);
+    transition: 3s;
+}
+
+.right {
+  font-size: larger;
+  color: blueviolet;
+  /* font-weight: 600; */
+}
+
+a {
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: blueviolet;
+  /* font-weight: 500; */
+}
+
+#Contact {
+  border-radius: 30px;
+  font-size: large;
+  padding: 12px;
+  color: white;
+  /* font-weight: 600; */
+  background-color: blueviolet;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    padding: 20px 30px ;
+    /* border: 2px solid; */
+}
+
+#photo{
+    border-radius: 50%;
+    height: 150px;
+    padding: 10px 20px ;
+    /* width: 200px; */
+}
+#Tagline{
+    margin-bottom: 20px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+#seprt{
+    color: blueviolet;
+    font-weight: bold;
+}
+.content{
+    width: 800px;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 30px 20px 30px ;
+    line-height: 30px;
+}
+
+.fa-brands, .fa-regular, .fa-solid{
+    margin: 15px;
+    font-size: 30px;
+    padding: 0 15px 0 15px;
+    color: blueviolet;
+}
+
+@media only screen and (max-width: 688px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+    }
+  #navbar {
+    height: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
