@@ -23,13 +23,13 @@ body {
   color: rgb(80, 46, 204);
 }
 
-.logo:hover{
-    background-color: rgb(152, 67, 231);
-    border-radius: 45px;
-    padding: 15px;
-    color:  whitesmoke;
-    transform: scale(0.9);
-    transition: 3s;
+.logo:hover {
+  background-color: rgb(152, 67, 231);
+  border-radius: 45px;
+  padding: 15px;
+  color: whitesmoke;
+  transform: scale(0.9);
+  transition: 3s;
 }
 
 .right {
@@ -55,58 +55,118 @@ a {
   background-color: blueviolet;
 }
 
-#main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column  ;
-    padding: 20px 30px ;
-    /* border: 2px solid; */
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 30px;
+  /* border: 2px solid; */
 }
 
-#photo{
-    border-radius: 50%;
-    height: 150px;
-    padding: 10px 20px ;
-    /* width: 200px; */
+#photo {
+  border-radius: 50%;
+  height: 150px;
+  padding: 10px 20px;
+  /* width: 200px; */
 }
-#Tagline{
-    margin-bottom: 20px;
-    color: blueviolet;
-    font-weight: bold;
-}
-
-#seprt{
-    color: blueviolet;
-    font-weight: bold;
-}
-.content{
-    width: 800px;
-    display: flex;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 30px 20px 30px ;
-    line-height: 30px;
+#Tagline {
+  margin-bottom: 20px;
+  color: blueviolet;
+  font-weight: bold;
 }
 
-.fa-brands, .fa-regular, .fa-solid{
-    margin: 15px;
-    font-size: 30px;
-    padding: 0 15px 0 15px;
-    color: blueviolet;
+#seprt {
+  color: blueviolet;
+  font-weight: bold;
+}
+.content {
+  width: 800px;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 30px 20px 30px;
+  line-height: 30px;
+}
+
+.complogo {
+  margin: 15px;
+  font-size: 30px;
+  padding: 0 15px 0 15px;
+  color: blueviolet;
+}
+
+#landportimg {
+  width: 700px;
+}
+
+.langwrapper {
+  background-color: lightyellow;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0 10px 0;
+  padding: 15px 10px 15px 10px;
+}
+
+.iconwrap {
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.langlogo {
+  color: blueviolet;
+  font-size: 130px;
+}
+
+#pcolor{
+  color: rgb(4584b6, r g b);
+}
+
+.phover {
+  opacity: 0;
+}
+
+.iconwrap:hover .phover {
+  color: blueviolet;
+  font-weight: bold;
+  transition: all 0.81s ease-in-out;
+  opacity: 1;
+}
+
+.iconwrap:hover .langlogo {
+  transition: transform 300ms ease-in-out;
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+#langtags{
+  margin-top: 30px;
+  font-size: 40px;
+  color: lightcoral;
+}
+
+#LangSpan{
+  color: blueviolet;
 }
 
 @media only screen and (max-width: 688px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        height: 100vh;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+  }
   #navbar {
     height: 100;
     display: flex;
