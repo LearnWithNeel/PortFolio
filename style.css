@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "New Amsterdam";
+}
+
+/* UTILS */
+
+.flex{
+  display: flex;
+}
+
+ul,ol,li{
+  list-style-type: none;
 }
 
 body {
@@ -124,10 +137,11 @@ a {
 
 .langlogo {
   color: blueviolet;
-  font-size: 130px;
+  font-size: 100px;
+  opacity: 0.7;
 }
 
-#pcolor{
+#pcolor {
   color: rgb(4584b6, r g b);
 }
 
@@ -138,27 +152,120 @@ a {
 .iconwrap:hover .phover {
   color: blueviolet;
   font-weight: bold;
-  transition: all 0.81s ease-in-out;
+  font-size: 1em;
+  transition: all 0.81s ease;
   opacity: 1;
 }
 
 .iconwrap:hover .langlogo {
-  transition: transform 300ms ease-in-out;
-  transform: scale(0.9);
-  opacity: 0.7;
+  transition: all 0.81s ease-out;
+  transform: scale(1);
+  font-size: 130px;
+  opacity: 1;  
 }
 
-#langtags{
+.langtags-Projects {
   margin-top: 30px;
   font-size: 40px;
   color: lightcoral;
 }
 
-#LangSpan{
-  color: blueviolet;
+#LangSpan {
+  color: #8a2be2;
 }
 
-@media only screen and (max-width: 688px) {
+.Project-Wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+}
+
+.Project-image{
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Project-image img{
+  width: 750px;
+  height: 550px;
+  border-radius: 2em;
+  box-shadow: 30px 30px 20px gray;
+}
+
+.Project-Content{
+  position: absolute;
+  margin-bottom: 30px;
+  width: 30em;
+  opacity: 0;
+  color: #8a2be2;
+  /* Flex code */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* transform: translate(-50%, 50%); */
+  /* gap: 50px; */
+  font-weight: bold;
+  font-style: italic;
+  gap: 80px;
+
+
+  /* Grid code */
+    /* display: grid;
+    grid-template-rows: 40% 40% 10%;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1em;
+    color: green; */
+}
+
+.Project-Content p{
+  font-size: 26px;
+  margin-top: 80px;
+  font-weight: bolder;
+}
+
+.Project-image:hover .Project-Content{
+  opacity: 1;
+  transform: scale(0.8s);
+  transition: all 0.81s ease-in-out;
+}
+
+footer{
+  width: 100%;
+  margin-top: 10px;
+  background-color: #8a2be2;
+  padding: 1em;
+  color: #ffffff;
+}
+
+.logo-social_icons{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img{
+  width: 180px;
+}
+
+.footer-content{
+  font-size: 1.3em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @media only screen and (max-width: 688px) {
   * {
     margin: 0;
     padding: 0;
@@ -173,4 +280,9 @@ a {
     justify-content: space-between;
     align-items: center;
   }
-}
+  .prevent-select {
+    -webkit-user-select: none; /* Safari */
+/* -ms-user-select: none; IE 10 and IE 11 */
+/* user-select: none; Standard syntax */
+/* } */
+/* } */
